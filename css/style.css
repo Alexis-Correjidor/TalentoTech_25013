@@ -240,3 +240,69 @@ label {
     transform: scale(1.05); 
 }
 
+/**********************************************************************************/
+
+/* Contenido página de detalle */
+
+.detalle-contenido {
+    margin-top: 120px;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.detalle-contenido img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* CELULARES (hasta 600px) */
+
+@media (max-width: 600px) {
+    .detalle-contenido {
+        padding: 10px;
+        margin-top: 100px;
+    }
+
+    .detalle-contenido h2 {
+        font-size: 1.4rem;
+    }
+
+    .detalle-contenido p {
+        font-size: 1rem;
+    }
+}
+
+  /* TABLETS (601px a 1024px) */
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .detalle-contenido h2 {
+        font-size: 1.8rem;
+    }
+
+    .detalle-contenido p {
+        font-size: 1.1rem;
+    }
+}
+
+/* PC (más de 1024px) */
+
+@media (min-width: 1025px) {
+    .detalle-contenido h2 {
+        font-size: 2rem;
+    }
+
+    .detalle-contenido p {
+        font-size: 1.2rem;
+    }
+}
+
+  /* Pantallas grandes (más de 1440px) */
+@media (min-width: 1440px) {
+    .detalle-contenido {
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
