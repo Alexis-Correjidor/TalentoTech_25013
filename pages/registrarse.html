@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="shortcut icon" href="../pelicula.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <title>Peliculas CaC</title>
+    </head>
+    <body class="body">
+        <!--Barra de Navegacion-->
+        <header>
+            <nav class="navbar navbar-expand-md fixed-top"> 
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../assets/img/claquetaPNG.png" alt="Logo" width="30" height="30"  class="d-inline-block align-text-top "> <!--rounded-circle-->
+                    </a>  
+                    <a class="navbar-brand" href="../index.html">MovieMania</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./registrarse.html">Registrarse</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./iniciarsesion.html">Iniciar Sesion</a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <!--Formulario-->
+        <div class="formulario">
+            <h2>Formulario de Registro</h2>
+            <form id="registroForm" onsubmit="return validarFormulario()">
+                <div class="input">
+                    <label for="apellido">Nombre</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+                <div class="input">
+                    <label for="nombre">Apellido</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="input">
+                    <label for="sexo">Sexo</label>
+                    <select name="sexo" id="sexo">
+                        <option value="M">Masculino</option>
+                        <option value="F">Femenino</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <label for="tipo">Tipo y Número</label>
+                    <div class="tipo">
+                        <select name="tipo" id="tipo">
+                            <option value="DNI">DNI</option>
+                            <option value="LC">LC</option>
+                            <option value="LE">LE</option>
+                        </select>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" id="numero" name="numero" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="input">
+                    <label for="fecha-nacimiento">Fecha de Nacimiento</label>
+                    <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+                </div>
+                <div class="input">
+                    <label for="telefono">Teléfono</label>
+                    <input type="text" id="telefono" name="telefono" required>
+                </div>
+                <div class="input">
+                    <label for="estado-civil">Estado Civil</label>
+                    <select name="estado-civil" id="estado-civil">
+                        <option value="S">Soltero/a</option>
+                        <option value="C">Casado/a</option>
+                        <option value="V">Viudo/a</option>
+                        <option value="D">Divorciado/a</option> 
+                    </select>
+                </div>
+                <div class="input">
+                    <label for="domicilio">Domicilio</label>
+                    <input type="text" id="domicilio" name="domicilio" required>
+                </div>
+                
+                <button class="btn-contacto">Enviar</button>
+            </form>
+        </div>
+
+        <!--Footer-->           
+        <footer class="row">
+            <div class="col-9">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">   
+                        <ul>
+                            <li class="titulofooter">Informacion de contacto</li>
+                            <li><img src="../assets/img/ubicacion.png" alt="ubicacion">
+                                <p>Buenos Aires, Argentina</p>
+                            </li>
+                            <li><img src="../assets/img/telefono.png" alt="telefono">
+                                <p>+5491133668135</p>
+                            </li>
+                            <li><img src="../assets/img/correo.png" alt="correo">
+                                <p>moviemania@jujuy.com.ar</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <ul>
+                            <li class="titulofooter">Enlace de Interes</li>
+                            <li><img src="../assets/img/facebook.png" alt="facebook">
+                                <a href="https://www.facebook.com/">Facebook</a></li>
+                            <li><img src="../assets/img/instagram.png" alt="instagram">
+                                <a href="https://www.instagram.com/">Instagram</a></li>
+                            <li><img src="../assets/img/twitter.png" alt="twitter">
+                                <a href="https://twitter.com/">Twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>    
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="../js/registrar.js"></script>
+    </body>
+</html>

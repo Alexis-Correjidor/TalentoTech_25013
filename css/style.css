@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Jersey+25&family=Varela+Round&display=swap');
+*{
+    font-family: "Varela Round", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.body{ 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../assets/img/fondo.jpg);    
+    background-size: cover;
+    background-position: center;
+}
+.row{ 
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;  
+}
+
+/*Barra de Navegacion*/
+
+.navbar-nav, .navbar-brand{
+    font-family: "Varela Round", sans-serif;
+    font-weight: bold;  
+}
+.navbar {
+    /*background-color: rgb(228, 224, 224); Fondo de BarraNavegacion sin imagen*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../assets/img/fondo.jpg);    
+    background-size: cover;
+    background-position: center; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+}
+.navbar-brand img { 
+    filter: brightness(0) invert(1) drop-shadow(2px 2px 4px rgba(255, 255, 255)); 
+}
+.navbar-toggler-icon { 
+    filter: invert(100%);
+}
+.collapse{
+    justify-content:right
+}
+.navbar-nav .nav-link{
+    color: white;
+}
+.navbar-brand {
+    color: white !important;
+}
+.nav-item a:hover {
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.854);
+    color: white; 
+}
+
+/*Portada*/
+
+.portada{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../assets/img/portada.jpg);
+    height: 100vh;  
+    background-size: cover;
+    background-position: center;
+    /*background-repeat: no-repeat;*/
+}
+.titulo{
+    text-align: center;
+}
+p.titulo{
+    margin: 0;
+}
+div.col-3.botonRegistrar{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*Busqueda*/
+
+section.row.bus{
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.linea{
+    color:white;
+    border-top: 2px solid rgb(255, 255, 255);
+}
+
+.buscador, .botonRegistrar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+/*Peliculas*/
+
+.card{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*Footer*/
+
+footer{
+    background-color: #111416; 
+}
+
+li.titulofooter{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+footer li, footer p, footer a{
+    opacity: 0.6; 
+}
+footer img{
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer p{
+    margin: 0;
+}
+footer ul{
+    
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    
+}
+footer ul li{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+}
+
+/***********************************InicioSesion******************************************/
+
+/*{
+    align-items: center;
+    justify-content: center;
+    background-color: none;
+}*/
+div.col-xs-12.form-check{
+    padding: 0;
+}
+
+div.row.iniciarsesion{
+margin-top: 10rem;
+margin-left: 5rem;
+margin-right: 5rem;
+margin-bottom: 10rem;
+border-radius: 1rem;
+background-color: #4e4d4d29;
+padding-top: 5rem ;
+padding-bottom: 5rem ;
+-webkit-box-shadow: 28px 30px 23px -12px rgba(0,0,0,0.8);
+-moz-box-shadow: 28px 30px 23px -12px rgba(0,0,0,0.8);
+box-shadow: 28px 30px 23px -12px rgba(0,0,0,0.8);
+}
+
+/**************************************Formulario*****************************************/
+.formulario {
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff07;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    -webkit-box-shadow: 28px 30px 23px -12px rgba(0,0,0,0.8);
+    -moz-box-shadow: 28px 30px 23px -12px rgba(0,0,0,0.8);
+    box-shadow: 28px 30px 23px -12px rgba(0,0,0,0.8);
+}
+
+.formulario h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.input {
+    justify-content: space-between;
+    gap: 1rem;
+    display: flex;
+    flex-direction: row; 
+    margin-bottom: 15px;
+}
+
+.input label, .input input, .input select, input div { flex: 1; }
+
+.tipo{
+    margin-bottom: 5px;
+    flex: 1.08;
+    display: flex;
+    gap: 1rem;
+}
+
+.formulario form label {
+    margin-bottom: 5px;
+    display: flex;
+    gap: 1rem;
+}
+
+.formulario form input[type="text"],
+.formulario form input[type="date"],
+.formulario form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+label {
+    color: white;
+}
+.formulario {
+    margin-top: 100px; 
+}
+.alerta-formulario{
+    background-color: #e5be01;
+    color: #ffffff;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    text-align: center;
+}
+.btn-contacto{
+    background-color: #006699;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: scale(1); 
+}
+.btn-contacto:hover {
+    background-color: #00557a;
+    transition: all 0.3s ease;
+    transform: scale(1.05); 
+}
+
