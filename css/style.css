@@ -306,3 +306,19 @@ label {
         margin-right: auto;
     }
 }
+/**********************************************************************************/
+
+#contador-carrito,
+#total-carrito {
+    /* background-color: #006699; */
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.card-title,
+.card-text {
+    text-align: center;
+}
