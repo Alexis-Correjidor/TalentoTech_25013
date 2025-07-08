@@ -103,5 +103,5 @@ const actualizarTotal = () => {
 
 // irAOtraPagina fuera del DOMContentLoaded
 function irAOtraPagina() {
-    window.location.href = "./registrarse.html";
+    window.location.href = "./pages/registrarse.html";
 }
